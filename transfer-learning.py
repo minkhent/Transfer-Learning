@@ -57,9 +57,9 @@ step_size_train=train_generator.n//train_generator.batch_size
 history = model.fit_generator(train_generator,
                    validation_data=validation_generator,
                    validation_steps=50,
-                   epochs=5)
+                   epochs=50)
 
-model.save('cat_dog_horse.h5')
+model.save('model.h5')
 
 print(model.summary())
 
